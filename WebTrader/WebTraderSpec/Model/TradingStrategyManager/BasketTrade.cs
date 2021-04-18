@@ -17,8 +17,7 @@ namespace WebTraderSpec.Model
 		public double TradedValue { get; set; }			// How much we are going to trade now, e.g. 2
 		public double WantedValue { get; set; }			// Target postition, e.g 12
 		public double Price { get; set; }               // Price. For LIMIT orders 
-		public string AlgoStrategy { get; set; }		// NONE, VWAP, TWAP etc.
-		public string AlgoParameter { get; set; }		// Additional algo parameters
+		public string Index { get; set; }               // Index (Trading strategy or model) Name
 		public Dictionary<string, string> SystemValues { get; set; } // Reserverd for future usage. We don't know what additional parameters we will need 
 	}
 }

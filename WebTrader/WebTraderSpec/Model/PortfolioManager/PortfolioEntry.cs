@@ -15,6 +15,6 @@ namespace WebTraderSpec.Model
         public double BrokerAmount { get; set; }    // Should be exactly as our Amount. If there is a difference more data provided in SystemValues!
         public double BrokerAvgPrice { get; set; }  // Should be exactly as our AvgPrice but may differ a little
         public double PL { get; set; }              // Profit and loss. Are we making money or loosing them
-        public Dictionary<string, string> SystemValues { get; set; } // If positions are different, additional info comes as a set of SystemValues 
+        public Dictionary<string, string> SystemValues { get; set; } = new Dictionary<string, string>(); // If positions are different, additional info comes as a set of SystemValues 
     }
 }

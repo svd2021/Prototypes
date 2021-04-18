@@ -21,5 +21,12 @@ namespace WebTraderSpec.Model
 		public double TradePrice { get; set; }	// Last trade amount
 		public double TradeSz { get; set; }     // Last trade price
 		public DateTime TradeDt { get; set; }   // Last trade timestamp
+
+		public MarketData Clone()
+		{
+			return (MarketData)this.MemberwiseClone();
+		}
 	}
+
+
 }

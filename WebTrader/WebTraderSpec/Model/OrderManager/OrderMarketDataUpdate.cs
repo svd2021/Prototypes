@@ -8,7 +8,7 @@ namespace WebTraderSpec.Model
 {
     public class OrderMarketDataUpdate
     {
-        public string Id { get; set; }                  // Unique OrderID. Can be long, GUID or any sort of string
-        public MarketData MarketData { get; set; }      // An order Market Data Update
+        public string Id { get; set; }                                     // Unique OrderID. Can be long, GUID or any sort of string
+        public MarketData MarketData { get; set; } = new MarketData();     // An order Market Data Update
     }
 }

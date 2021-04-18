@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using WebTraderSpec.Model;
 
-namespace WebTraderSpec.Interfaces
+namespace WebTraderSpec
 {
     public interface ITradingStrategyManager
     {
-        List<BasketTrade> GetTrades(string userName, string modelName, bool closeout = false); // Receive a list of trades
+        Task<IEnumerable<BasketTrade>> GetTradesAsync(string userName, string modelName, bool closeout = false);    // Receive a list of trades
     }
 }
